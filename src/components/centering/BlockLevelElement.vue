@@ -3,6 +3,7 @@
     <div class="main">
       <div class="box">ブロックレベル要素</div>
     </div>
+    <br>
     <pre><code>
       .main{
         border: 1px solid #aaa;
@@ -12,6 +13,7 @@
         background-color: #42b983;
         position: relative;
       }
+
       .box {
         width: 200px;
         height: 200px;
@@ -30,7 +32,6 @@
 
 <style scoped>
 .main{
-  border: 1px solid #aaa;
   width: 400px;
   height: 400px;
   text-align: center;
@@ -46,7 +47,7 @@
   right: 0;
   position: absolute;
   margin: auto;
-  background-color: wheat;
   line-height: 200px;
+  background-color: wheat;
 }
 </style>

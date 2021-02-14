@@ -148,7 +148,6 @@ pre {
   background-color: sienna;
   width: 400px;
   font-size: 0.7rem;
-  overflow: scroll;
 }
 code {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;

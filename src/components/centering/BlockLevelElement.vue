@@ -6,25 +6,29 @@
     <br>
     <pre><code>
       .main{
-        border: 1px solid #aaa;
+        text-align: center;
+        position: relative;
         width: 400px;
         height: 400px;
-        text-align: center;
         background-color: #42b983;
-        position: relative;
       }
 
       .box {
-        width: 200px;
-        height: 200px;
+        position: absolute;
+
+        /* 絶対値にしてdivを中央に持ってきます */
+        margin: auto;
+
+        /* 文字を上下中央に持ってきます。 */
+        line-height: 200px;
+
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-        position: absolute;
-        margin: auto;
+        height: 200px;
+        width: 200px;
         background-color: wheat;
-        line-height: 200px;
       }
     </code></pre>
   </div>

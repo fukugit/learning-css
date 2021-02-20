@@ -4,17 +4,18 @@
       <!-- ここの中でHTMLを記述して下さい。 -->
 
       <div class="main">
-        <p>内側のPタグ</p>
+        <a href="https://www.google.com/">Googleへ飛びます。</a>
       </div>
 
       <!-- ここまで -->
     </div>
 
+
     <div class="main-sample-code">
       <!-- ここの中でコードを記述して下さい。 -->
       <pre><code>
         &lt;div class=&quot;main&quot;&gt;
-          &lt;p&gt;内側のPタグ&lt;/p&gt;
+          &lt;a href=&quot;https://www.google.com/&quot;&gt;Googleへ飛びます。&lt;/a&gt;
         &lt;/div&gt;
       </code></pre>
       <!-- ここまで -->
@@ -24,16 +25,16 @@
       <!-- ここの中でコードを記述して下さい。 -->
       <pre><code>
         .main{
-          width: 400px;
-          height: 400px;
-          /* 左右で中央寄せします。 */
+          width: 30%;
+          height: 100px;
           text-align: center;
-          background-color: #42b983;
+          background-color:wheat;
         }
-
-        p {
-          /* 上下で中央寄せします。 */
-          line-height: 400px;
+        a {
+          /* ブロック要素にして縦横をいっぱいに広げます */
+          display: block;
+          width: 100%;
+          height: 100%;
         }
       </code></pre>
       <!-- ここまで -->
@@ -45,8 +46,8 @@
 export default {
   data() {
     return {
-      title: 'インライン要素(p)を中央表示',
-      explanation: 'text-alignとline-heightを使って 真ん中へ表示します'
+      title: 'Divタグ全体をリンク化する方法',
+      explanation: 'aタグの縦横を外側のDiv要素100%に広げることでDiv全体をリンク化します。'
     }
   },
   activated() {
@@ -55,16 +56,17 @@ export default {
 }
 </script>
 
-
 <style scoped>
 .main{
   width: 30%;
   height: 100px;
-  /* text-alignを使って左右で中央寄せします。 */
   text-align: center;
-  background-color: wheat;
+  background-color:wheat;
 }
-p {
-  line-height: 100px;
+a {
+  /* ブロック要素にして縦横をいっぱいに広げます */
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 </style>

@@ -12,7 +12,15 @@
         </div>
         <div class="category">
           <h2>aタグ</h2>
-          <a @click="currentComponent = 'DivLink'">div全体をリンク化</a>
+          <ol class="category-list">
+            <li><a @click="currentComponent = 'DivLink'">div全体をリンク化</a></li>
+          </ol>
+        </div>
+        <div class="category">
+          <h2>margin</h2>
+          <ol class="category-list">
+            <li><a @click="currentComponent = 'Bottom'">最下部に表示</a></li>
+          </ol>
         </div>
       </div>
 
@@ -41,6 +49,7 @@
 import BlockLevelElement from './components/centering/BlockLevelElement.vue'
 import InlineElement from './components/centering/InlineElement.vue'
 import DivLink from './components/link/DivLink.vue'
+import Bottom from './components/margin/Bottom.vue'
 
 export default {
   name: 'App',
@@ -54,7 +63,8 @@ export default {
   components: {
     BlockLevelElement,
     InlineElement,
-    DivLink
+    DivLink,
+    Bottom
   },
   methods: {
     /* ここのvalueは $eventの値が入ります。*/
@@ -99,8 +109,6 @@ a {
 .menu {
   width: 50%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 10px;
   box-sizing: content-box;
   border: #393E46 solid 1px;
